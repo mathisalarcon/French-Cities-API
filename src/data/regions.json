@@ -1,602 +1,204 @@
 [
-    {
-        "name": "Auvergne-Rhône-Alpes",
-        "slug": "auvergne-rhône-alpes",
-        "departments": [
-            {
-                "name": "Ain",
-                "zip": "01",
-                "standard_of_living": 24810
-            },
-            {
-                "name": "Allier",
-                "zip": "03",
-                "standard_of_living": 21500
-            },
-            {
-                "name": "Ardèche",
-                "zip": "07",
-                "standard_of_living": 21990
-            },
-            {
-                "name": "Cantal",
-                "zip": "15",
-                "standard_of_living": 21710
-            },
-            {
-                "name": "Drôme",
-                "zip": "26",
-                "standard_of_living": 22450
-            },
-            {
-                "name": "Isère",
-                "zip": "38",
-                "standard_of_living": 24270
-            },
-            {
-                "name": "Loire",
-                "zip": "42",
-                "standard_of_living": 21970
-            },
-            {
-                "name": "Haute-Loire",
-                "zip": "43",
-                "standard_of_living": 22100
-            },
-            {
-                "name": "Puy-de-Dôme",
-                "zip": "63",
-                "standard_of_living": 23060
-            },
-            {
-                "name": "Rhône",
-                "zip": "69",
-                "standard_of_living": 24480
-            },
-            {
-                "name": "Savoie",
-                "zip": "73",
-                "standard_of_living": 24270
-            },
-            {
-                "name": "Haute-Savoie",
-                "zip": "74",
-                "standard_of_living": 28120
-            }
-        ]
-    },
-    {
-        "name": "Bourgogne-Franche-Comté",
-        "slug": "bourgogne-franche-comté",
-        "departments": [
-            {
-                "name": "Côte-d'Or",
-                "zip": "21",
-                "standard_of_living": 23720
-            },
-            {
-                "name": "Doubs",
-                "zip": "25",
-                "standard_of_living": 23890
-            },
-            {
-                "name": "Jura",
-                "zip": "39",
-                "standard_of_living": 23140
-            },
-            {
-                "name": "Nièvre",
-                "zip": "58",
-                "standard_of_living": 21380
-            },
-            {
-                "name": "Haute-Saône",
-                "zip": "70",
-                "standard_of_living": 21860
-            },
-            {
-                "name": "Saône-et-Loire",
-                "zip": "71",
-                "standard_of_living": 22170
-            },
-            {
-                "name": "Yonne",
-                "zip": "89",
-                "standard_of_living": 21940
-            },
-            {
-                "name": "Territoire de Belfort",
-                "zip": "90",
-                "standard_of_living": 22920
-            }
-        ]
-    },
-    {
-        "name": "Bretagne",
-        "slug": "bretagne",
-        "departments": [
-            {
-                "name": "Ille-et-Vilaine",
-                "zip": "35",
-                "standard_of_living": 23690
-            },
-            {
-                "name": "Côtes-d'Armor",
-                "zip": "22",
-                "standard_of_living": 22670
-            },
-            {
-                "name": "Morbihan",
-                "zip": "56",
-                "standard_of_living": 23140
-            },
-            {
-                "name": "Finistère",
-                "zip": "29",
-                "standard_of_living": 23220
-            }
-        ]
-    },
-    {
-        "name": "Centre-Val de Loire",
-        "slug": "centre-val-de-loire",
-        "departments": [
-            {
-                "name": "Cher",
-                "zip": "18",
-                "standard_of_living": 22100
-            },
-            {
-                "name": "Eure-et-Loir",
-                "zip": "28",
-                "standard_of_living": 23360
-            },
-            {
-                "name": "Indre",
-                "zip": "36",
-                "standard_of_living": 21270
-            },
-            {
-                "name": "Indre-et-Loire",
-                "zip": "37",
-                "standard_of_living": 23140
-            },
-            {
-                "name": "Loir-et-Cher",
-                "zip": "41",
-                "standard_of_living": 22510
-            },
-            {
-                "name": "Loiret",
-                "zip": "45",
-                "standard_of_living": 23090
-            }
-        ]
-    },
-    {
-        "name": "Corse",
-        "slug": "corse",
-        "departments": [
-            {
-                "name": "Corse-du-Sud",
-                "zip": "2A",
-                "standard_of_living": 23420
-            },
-            {
-                "name": "Haute-Corse",
-                "zip": "2B",
-                "standard_of_living": 21460
-            }
-        ]
-    },
-    {
-        "name": "Grand Est",
-        "slug": "grand-est",
-        "departments": [
-            {
-                "name": "Ardennes",
-                "zip": "08",
-                "standard_of_living": 20850
-            },
-            {
-                "name": "Aube",
-                "zip": "10",
-                "standard_of_living": 21530
-            },
-            {
-                "name": "Marne",
-                "zip": "51",
-                "standard_of_living": 22830
-            },
-            {
-                "name": "Haute-Marne",
-                "zip": "52",
-                "standard_of_living": 21350
-            },
-            {
-                "name": "Meurthe-et-Moselle",
-                "zip": "54",
-                "standard_of_living": 23010
-            },
-            {
-                "name": "Meuse",
-                "zip": "55",
-                "standard_of_living": 21890
-            },
-            {
-                "name": "Moselle",
-                "zip": "57",
-                "standard_of_living": 22980
-            },
-            {
-                "name": "Bas-Rhin",
-                "zip": "67",
-                "standard_of_living": 24090
-            },
-            {
-                "name": "Haut-Rhin",
-                "zip": "68",
-                "standard_of_living": 24470
-            },
-            {
-                "name": "Vosges",
-                "zip": "88",
-                "standard_of_living": 21550
-            }
-        ]
-    },
-    {
-        "name": "Guadeloupe",
-        "slug": "guadeloupe",
-        "departments": [
-            {
-                "name": "Guadeloupe",
-                "zip": "971"
-            }
-        ]
-    },
-    {
-        "name": "Guyane",
-        "slug": "guyane",
-        "departments": [
-            {
-                "name": "Guyane",
-                "zip": "973"
-            }
-        ]
-    },
-    {
-        "name": "Hauts-de-France",
-        "slug": "hauts-de-france",
-        "departments": [
-            {
-                "name": "Aisne",
-                "zip": "02",
-                "standard_of_living": 20920
-            },
-            {
-                "name": "Nord",
-                "zip": "59",
-                "standard_of_living": 21340
-            },
-            {
-                "name": "Oise",
-                "zip": "60",
-                "standard_of_living": 23330
-            },
-            {
-                "name": "Pas-de-Calais",
-                "zip": "62",
-                "standard_of_living": 20720
-            },
-            {
-                "name": "Somme",
-                "zip": "80",
-                "standard_of_living": 21560
-            }
-        ]
-    },
-    {
-        "name": "Île-de-France",
-        "slug": "île-de-france",
-        "departments": [
-            {
-                "name": "Paris",
-                "zip": "75",
-                "standard_of_living": 29730
-            },
-            {
-                "name": "Seine-et-Marne",
-                "zip": "77",
-                "standard_of_living": 24640
-            },
-            {
-                "name": "Yvelines",
-                "zip": "78",
-                "standard_of_living": 28130
-            },
-            {
-                "name": "Essonne",
-                "zip": "91",
-                "standard_of_living": 25040
-            },
-            {
-                "name": "Hauts-de-Seine",
-                "zip": "92",
-                "standard_of_living": 29720
-            },
-            {
-                "name": "Seine-Saint-Denis",
-                "zip": "93",
-                "standard_of_living": 19020
-            },
-            {
-                "name": "Val-de-Marne",
-                "zip": "94",
-                "standard_of_living": 24270
-            },
-            {
-                "name": "Val-d'Oise",
-                "zip": "95",
-                "standard_of_living": 23290
-            }
-        ]
-    },
-    {
-        "name": "La Réunion",
-        "slug": "la-réunion",
-        "departments": [
-            {
-                "name": "La Réunion",
-                "zip": "974",
-                "standard_of_living": 17070
-            }
-        ]
-    },
-    {
-        "name": "Martinique",
-        "slug": "martinique",
-        "departments": [
-            {
-                "name": "Martinique",
-                "zip": "972",
-                "standard_of_living": 19770
-            }
-        ]
-    },
-    {
-        "name": "Normandie",
-        "slug": "normandie",
-        "departments": [
-            {
-                "name": "Calvados",
-                "zip": "14",
-                "standard_of_living": 22840
-            },
-            {
-                "name": "Eure",
-                "zip": "27",
-                "standard_of_living": 22880
-            },
-            {
-                "name": "Manche",
-                "zip": "50",
-                "standard_of_living": 22480
-            },
-            {
-                "name": "Orne",
-                "zip": "61",
-                "standard_of_living": 21400
-            },
-            {
-                "name": "Seine-Maritime",
-                "zip": "76",
-                "standard_of_living": 22340
-            }
-        ]
-    },
-    {
-        "name": "Nouvelle-Aquitaine",
-        "slug": "nouvelle-aquitaine",
-        "departments": [
-            {
-                "name": "Charente",
-                "zip": "16",
-                "standard_of_living": 22000
-            },
-            {
-                "name": "Charente-Maritime",
-                "zip": "17",
-                "standard_of_living": 22810
-            },
-            {
-                "name": "Corrèze",
-                "zip": "19",
-                "standard_of_living": 22140
-            },
-            {
-                "name": "Creuse",
-                "zip": "23",
-                "standard_of_living": 20620
-            },
-            {
-                "name": "Dordogne",
-                "zip": "24",
-                "standard_of_living": 21410
-            },
-            {
-                "name": "Gironde",
-                "zip": "33",
-                "standard_of_living": 23950
-            },
-            {
-                "name": "Landes",
-                "zip": "40",
-                "standard_of_living": 22840
-            },
-            {
-                "name": "Lot-et-Garonne",
-                "zip": "47",
-                "standard_of_living": 21050
-            },
-            {
-                "name": "Pyrénées-Atlantiques",
-                "zip": "64",
-                "standard_of_living": 23300
-            },
-            {
-                "name": "Deux-Sèvres",
-                "zip": "79",
-                "standard_of_living": 22220
-            },
-            {
-                "name": "Vienne",
-                "zip": "86",
-                "standard_of_living": 22220
-            },
-            {
-                "name": "Haute-Vienne",
-                "zip": "87",
-                "standard_of_living": 22140
-            }
-        ]
-    },
-    {
-        "name": "Occitanie",
-        "slug": "occitanie",
-        "departments": [
-            {
-                "name": "Ariège",
-                "zip": "09",
-                "standard_of_living": 20820
-            },
-            {
-                "name": "Aude",
-                "zip": "11",
-                "standard_of_living": 20510
-            },
-            {
-                "name": "Aveyron",
-                "zip": "12",
-                "standard_of_living": 21860
-            },
-            {
-                "name": "Gard",
-                "zip": "30",
-                "standard_of_living": 21330
-            },
-            {
-                "name": "Haute-Garonne",
-                "zip": "31",
-                "standard_of_living": 24230
-            },
-            {
-                "name": "Gers",
-                "zip": "32",
-                "standard_of_living": 22110
-            },
-            {
-                "name": "Hérault",
-                "zip": "34",
-                "standard_of_living": 21800
-            },
-            {
-                "name": "Lot",
-                "zip": "46",
-                "standard_of_living": 21910
-            },
-            {
-                "name": "Lozère",
-                "zip": "48",
-                "standard_of_living": 21580
-            },
-            {
-                "name": "Hautes-Pyrénées",
-                "zip": "65",
-                "standard_of_living": 21530
-            },
-            {
-                "name": "Pyrénées-Orientales",
-                "zip": "66",
-                "standard_of_living": 20650
-            },
-            {
-                "name": "Tarn",
-                "zip": "81",
-                "standard_of_living": 21730
-            },
-            {
-                "name": "Tarn-et-Garonne",
-                "zip": "82",
-                "standard_of_living": 21520
-            }
-        ]
-    },
-    {
-        "name": "Pays de la Loire",
-        "slug": "pays-de-la-loire",
-        "departments": [
-            {
-                "name": "Loire-Atlantique",
-                "zip": "44",
-                "standard_of_living": 24120
-            },
-            {
-                "name": "Maine-et-Loire",
-                "zip": "49",
-                "standard_of_living": 22500
-            },
-            {
-                "name": "Mayenne",
-                "zip": "53",
-                "standard_of_living": 22230
-            },
-            {
-                "name": "Sarthe",
-                "zip": "72",
-                "standard_of_living": 22230
-            },
-            {
-                "name": "Vendée",
-                "zip": "85",
-                "standard_of_living": 22790
-            }
-        ]
-    },
-    {
-        "name": "Provence-Alpes-Côte d'Azur",
-        "slug": "provence-alpes-côte-d'azur",
-        "departments": [
-            {
-                "name": "Alpes-de-Haute-Provence",
-                "zip": "04",
-                "standard_of_living": 21790
-            },
-            {
-                "name": "Hautes-Alpes",
-                "zip": "05",
-                "standard_of_living": 22010
-            },
-            {
-                "name": "Alpes-Maritimes",
-                "zip": "06",
-                "standard_of_living": 23460
-            },
-            {
-                "name": "Bouches-du-Rhône",
-                "zip": "13",
-                "standard_of_living": 22920
-            },
-            {
-                "name": "Var",
-                "zip": "83",
-                "standard_of_living": 23120
-            },
-            {
-                "name": "Vaucluse",
-                "zip": "84",
-                "standard_of_living": 21370
-            }
-        ]
-    }
+  {
+    "name": "Auvergne-Rhône-Alpes",
+    "slug": "auvergne-rhône-alpes",
+    "departments": [
+      "01",
+      "03",
+      "07",
+      "15",
+      "26",
+      "38",
+      "42",
+      "43",
+      "63",
+      "69",
+      "73",
+      "74"
+    ]
+  },
+  {
+    "name": "Bourgogne-Franche-Comté",
+    "slug": "bourgogne-franche-comté",
+    "departments": [
+      "21",
+      "25",
+      "39",
+      "58",
+      "70",
+      "71",
+      "89",
+      "90"
+    ]
+  },
+  {
+    "name": "Bretagne",
+    "slug": "bretagne",
+    "departments": [
+      "35",
+      "22",
+      "56",
+      "29"
+    ]
+  },
+  {
+    "name": "Centre-Val de Loire",
+    "slug": "centre-val-de-loire",
+    "departments": [
+      "18",
+      "28",
+      "36",
+      "37",
+      "41",
+      "45"
+    ]
+  },
+  {
+    "name": "Corse",
+    "slug": "corse",
+    "departments": [
+      "2A",
+      "2B"
+    ]
+  },
+  {
+    "name": "Grand Est",
+    "slug": "grand-est",
+    "departments": [
+      "08",
+      "10",
+      "51",
+      "52",
+      "54",
+      "55",
+      "57",
+      "67",
+      "68",
+      "88"
+    ]
+  },
+  {
+    "name": "Guadeloupe",
+    "slug": "guadeloupe",
+    "departments": [
+      "971"
+    ]
+  },
+  {
+    "name": "Guyane",
+    "slug": "guyane",
+    "departments": [
+      "973"
+    ]
+  },
+  {
+    "name": "Hauts-de-France",
+    "slug": "hauts-de-france",
+    "departments": [
+      "02",
+      "59",
+      "60",
+      "62",
+      "80"
+    ]
+  },
+  {
+    "name": "Île-de-France",
+    "slug": "île-de-france",
+    "departments": [
+      "75",
+      "77",
+      "78",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95"
+    ]
+  },
+  {
+    "name": "La Réunion",
+    "slug": "la-réunion",
+    "departments": [
+      "974"
+    ]
+  },
+  {
+    "name": "Martinique",
+    "slug": "martinique",
+    "departments": [
+      "972"
+    ]
+  },
+  {
+    "name": "Normandie",
+    "slug": "normandie",
+    "departments": [
+      "14",
+      "27",
+      "50",
+      "61",
+      "76"
+    ]
+  },
+  {
+    "name": "Nouvelle-Aquitaine",
+    "slug": "nouvelle-aquitaine",
+    "departments": [
+      "16",
+      "17",
+      "19",
+      "23",
+      "24",
+      "33",
+      "40",
+      "47",
+      "64",
+      "79",
+      "86",
+      "87"
+    ]
+  },
+  {
+    "name": "Occitanie",
+    "slug": "occitanie",
+    "departments": [
+      "09",
+      "11",
+      "12",
+      "30",
+      "31",
+      "32",
+      "34",
+      "46",
+      "48",
+      "65",
+      "66",
+      "81",
+      "82"
+    ]
+  },
+  {
+    "name": "Pays de la Loire",
+    "slug": "pays-de-la-loire",
+    "departments": [
+      "44",
+      "49",
+      "53",
+      "72",
+      "85"
+    ]
+  },
+  {
+    "name": "Provence-Alpes-Côte d'Azur",
+    "slug": "provence-alpes-côte-d'azur",
+    "departments": [
+      "04",
+      "05",
+      "06",
+      "13",
+      "83",
+      "84"
+    ]
+  }
 ]
