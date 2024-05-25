@@ -19,6 +19,7 @@ import {
 	getCitiesByDepartment,
 	getCitiesByRegion,
 	getDepartments,
+	getDepartmentsByCity,
 	getDepartmentsByRegion,
 	getRegions,
 } from "../helpers/getters";
@@ -80,7 +81,7 @@ router.get("/cities", (req, res) => {
         const citiesWithRegionsAndDepartments: City[] = cities.map((city) => {
             return {
                 ...city,
-                departments: getDepartmentsByRegion({ region: { name: city.region as string } }),
+                department: getDepartmentsByCity({ city: { slug: city.slug, name: city.name, population: { max: city.population, min: city.population } }  })[0],
             };
         });
 
@@ -100,7 +101,7 @@ router.get("/cities", (req, res) => {
         const citiesWithDepartments: City[] = cities.map((city) => {
             return {
                 ...city,
-                departments: getDepartmentsByRegion({ region: { name: city.region as string } }),
+                department: getDepartmentsByCity({ city: { slug: city.slug, name: city.name, population: { max: city.population, min: city.population } }  })[0],
             };
         });
 

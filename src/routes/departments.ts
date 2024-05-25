@@ -122,8 +122,8 @@ router.get("/departments", (req, res) => {
     } else if (fields.includes("regions")) {
         const departmentsWithRegions: Department[] = departments.map((department) => {
             return {
-                ...department,
-                cities: getCitiesByDepartment({ department: { ...department, standard_of_living: undefined } }),
+				...department,
+				region: getRegions({ department: { ...department, standard_of_living: undefined } })[0],
             };
         });
 

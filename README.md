@@ -21,7 +21,7 @@
 ### Regions
 > **GET** `/regions`
 
-##### Query Parameters :
+#### Query Parameters :
 | Name | Type | Description |
 | --- | --- | --- |
 | `name` | `string` | The name of the region |
@@ -40,6 +40,78 @@
 | `cityPopulationMax` | `int` | the maximum population of a city in the region |
 | `cityDensityMin` | `int` | the minimum density of a city in the region |
 | `cityDensityMax` | `int` | the maximum density of a city in the region |
+
+#### Example
+```js
+/* NODE JS */
+const axios = require('axios').default;
+axios.get("http://185.44.81.189:25578/regions", {
+    params: {
+        limit: 2,
+        name: "ie"
+    }
+}).then(res => {
+    console.log(res.data);
+}).catch(err => {
+    console.error(err);
+});
+```
+
+#### Response
+<details>
+<summary>
+
+</summary>
+
+```json
+{
+  "success": true,
+  "results": [
+    {
+      "name": "Normandie",
+      "slug": "normandie",
+      "departments": [
+        "14",
+        "27",
+        "50",
+        "61",
+        "76"
+      ],
+      "departments": [{ // If you asked for departments field
+        ...,
+        "cities": { ... }, // If you asked for cities field
+      }],
+      "cities": { ... }, // If you asked for cities field only
+    },
+    {
+      "name": "Occitanie",
+      "slug": "occitanie",
+      "departments": [
+        "09",
+        "11",
+        "12",
+        "30",
+        "31",
+        "32",
+        "34",
+        "46",
+        "48",
+        "65",
+        "66",
+        "81",
+        "82"
+      ],
+      "departments": [{ // If you asked for departments field
+        ...,
+        "cities": { ... }, // If you asked for cities field
+      }],
+      "cities": { ... }, // If you asked for cities field only
+    }
+  ]
+}
+```
+</details>
+
 
 ### Departments
 > **GET** `/departments`
@@ -64,6 +136,52 @@
 | `cityDensityMin` | `int` | the minimum density of a city in the department |
 | `cityDensityMax` | `int` | the maximum density of a city in the department |
 
+#### Example
+```js
+/* NODE JS */
+const axios = require('axios').default;
+axios.get("http://185.44.81.189:25578/departments", {
+    params: {
+        limit: 2,
+        name: "ie"
+    }
+}).then(res => {
+    console.log(res.data);
+}).catch(err => {
+    console.error(err);
+});
+```
+
+#### Response
+<details>
+<summary>
+
+</summary>
+
+```json
+{
+  "success": true,
+  "results": [
+    {
+      "name": "Savoie",
+      "zip": "73",
+      "standard_of_living": 24270,
+      "region": { ... }, // If you asked for regions field
+      "cities": [{ ... }] // If you asked for cities field
+    },
+    {
+      "name": "Haute-Savoie",
+      "zip": "74",
+      "standard_of_living": 28120,
+      "region": { ... }, // If you asked for regions field
+      "cities": [{ ... }] // If you asked for cities field
+    }
+  ]
+}
+```
+</details>
+
+
 ### Cities
 > **GET** `/cities`
 
@@ -86,3 +204,62 @@
 | `departmentStandardOfLivingMax` | `int` | The maximum standard of living of the department of the city |
 | `regionName` | `string` | The name of the region of the city |
 | `regionSlug` | `string` | The slug of the region of the city |
+
+#### Example
+```js
+/* NODE JS */
+const axios = require('axios').default;
+axios.get("http://185.44.81.189:25578/cities", {
+    params: {
+        limit: 2,
+        name: "ie"
+    }
+}).then(res => {
+    console.log(res.data);
+}).catch(err => {
+    console.error(err);
+});
+```
+
+#### Response
+<details>
+<summary>
+
+</summary>
+
+```json
+{
+  "success": true,
+  "results": [
+    {
+      "dep": "01",
+      "name": "Sainte-Julie",
+      "slug": "sainte-julie",
+      "region": "Auvergne-Rhône-Alpes",
+      "coord": {
+        "lat": 45.88914,
+        "lon": 5.278195
+      },
+      "population": 529,
+      "density": 47,
+      "region": { ... }, // If you asked for regions field
+      "department": { ... } // If you asked for departments field
+    },
+    {
+      "dep": "01",
+      "name": "Sainte-Euphémie",
+      "slug": "sainte-euphémie",
+      "region": "Auvergne-Rhône-Alpes",
+      "coord": {
+        "lat": 45.97254,
+        "lon": 4.796075
+      },
+      "population": 857,
+      "density": 186,
+      "region": { ... }, // If you asked for regions field
+      "department": { ... } // If you asked for departments field
+    }
+  ]
+}
+```
+</details>
