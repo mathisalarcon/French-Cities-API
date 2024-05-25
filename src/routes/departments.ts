@@ -23,6 +23,11 @@ import {
 const router = Router();
 
 router.get("/departments", (req, res) => {
+    const limit = req.query.limit
+		? parseInt(req.query.limit as string)
+		: Infinity;
+    const offset = req.query.offset ? parseInt(req.query.offset as string) : 0;
+    
     const name: string = req.query.name as string;
     const zip: string = req.query.zip as string;
 	const regionName: string = req.query.regionName as string;
@@ -112,7 +117,7 @@ router.get("/departments", (req, res) => {
             };
         });
 
-        res.json({ success: true, results: departmentsWithRegionsAndCities });
+        res.json({ success: true, results: departmentsWithRegionsAndCities.slice(offset, offset + limit) });
         return;
     } else if (fields.includes("regions")) {
         const departmentsWithRegions: Department[] = departments.map((department) => {
@@ -122,7 +127,7 @@ router.get("/departments", (req, res) => {
             };
         });
 
-        res.json({ success: true, results: departmentsWithRegions });
+        res.json({ success: true, results: departmentsWithRegions.slice(offset, offset + limit) });
         return;
     } else if (fields.includes("cities")) {
         const departmentsWithCities: Department[] = departments.map((department) => {
@@ -132,11 +137,11 @@ router.get("/departments", (req, res) => {
             };
         });
 
-        res.json({ success: true, results: departmentsWithCities });
+        res.json({ success: true, results: departmentsWithCities.slice(offset, offset + limit) });
         return;
     };
 
-    res.json({ success: true, results: departments });
+    res.json({ success: true, results: departments.slice(offset, offset + limit) });
 });
 
 export default router;
