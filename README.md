@@ -1,4 +1,4 @@
-# francegeo-api
+# French Cities / Departments / Regions API
  Complete Dataset API of french Region/Department/Cities. More to come such as images, adresses etc
 
 # URL
@@ -212,7 +212,7 @@ const axios = require('axios').default;
 axios.get("http://185.44.81.189:25578/cities", {
     params: {
         limit: 2,
-        name: "ie"
+        name: "Fécamp"
     }
 }).then(res => {
     console.log(res.data);
@@ -232,32 +232,43 @@ axios.get("http://185.44.81.189:25578/cities", {
   "success": true,
   "results": [
     {
-      "dep": "01",
-      "name": "Sainte-Julie",
-      "slug": "sainte-julie",
-      "region": "Auvergne-Rhône-Alpes",
+      "dep": "76",
+      "name": "Fécamp",
+      "slug": "fécamp",
+      "region": "Normandie",
       "coord": {
-        "lat": 45.88914,
-        "lon": 5.278195
+        "lat": 49.7585718,
+        "lon": 0.3758746
       },
-      "population": 529,
-      "density": 47,
-      "region": { ... }, // If you asked for regions field
-      "department": { ... } // If you asked for departments field
+      "population": 20808,
+      "density": 1381,
+      "museums": [
+        {
+          "name": "Musée des Arts & de l'Enfance",
+          "address": "21, Rue Alexandre Legros 76400 FECAMP"
+        },
+        {
+          "name": "Musée des Pêcheries, Cité des Terre-Neuvas",
+          "address": "3, Quai Capitaine Jean Recher 76400 FECAMP"
+        }
+      ],
+      "department": { ... }, // If you asked for departments field
+      "region": { ... } // If you asked for regions field
     },
     {
-      "dep": "01",
-      "name": "Sainte-Euphémie",
-      "slug": "sainte-euphémie",
-      "region": "Auvergne-Rhône-Alpes",
+      "dep": "76",
+      "name": "Senneville-sur-Fécamp",
+      "slug": "senneville-sur-fécamp",
+      "region": "Normandie",
       "coord": {
-        "lat": 45.97254,
-        "lon": 4.796075
+        "lat": 49.7733929,
+        "lon": 0.4149485
       },
-      "population": 857,
-      "density": 186,
-      "region": { ... }, // If you asked for regions field
-      "department": { ... } // If you asked for departments field
+      "population": 565,
+      "density": 119,
+      "museums": [],
+      "department": { ... }, // If you asked for departments field
+      "region": { ... } // If you asked for regions field
     }
   ]
 }

@@ -24,6 +24,10 @@ export type City = {
     },
     population: number;
     density: number;
+    museums?: {
+        name: string;
+        address: string;
+    }[];
 }
 
 export type Department = {
