@@ -1,6 +1,9 @@
 # francegeo-api
  Complete Dataset API of french Region/Department/Cities. More to come such as images, adresses etc
 
+# URL
+`http://185.44.81.189:25578/`
+
 ## Endpoints
 - [Regions](#regions)
 - [Departments](#departments)
